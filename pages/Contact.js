@@ -99,12 +99,14 @@ export default function Contact() {
             />
 
             <input
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:bg-teal-800 cursor-pointer"
               type="submit"
               value="Send"
             />
             {done && (
-              <span>Thanks for contacting me! I will reply to you soon</span>
+              <span className="dark:text-white">
+                Thanks for contacting me! I will reply to you soon
+              </span>
             )}
           </form>
         </div>
